@@ -1,55 +1,113 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <meta charset="UTF-8">
-    <title>Dreamland | Welcome</title>
+
+    <title>dreamland | redirecting...</title>
+
     <style>
+
         body {
+
             background-color: #1a1a2e;
+
             color: #ffffff;
+
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
             display: flex;
+
             flex-direction: column;
+
             align-items: center;
+
             justify-content: center;
+
             height: 100vh;
+
             margin: 0;
+
             text-align: center;
+
         }
 
-        /* A more modern button instead of a simple link */
-        .btn {
-            background-color: #3498db;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background 0.3s;
-            margin-top: 20px;
+
+
+        .loader {
+
+            border: 8px solid #f3f3f3;
+
+            border-top: 8px solid #3498db;
+
+            border-radius: 50%;
+
+            width: 50px;
+
+            height: 50px;
+
+            animation: spin 1s linear infinite;
+
+            margin-bottom: 20px;
+
         }
 
-        .btn:hover {
-            background-color: #2980b9;
+
+
+        @keyframes spin {
+
+            0% { transform: rotate(0deg); }
+
+            100% { transform: rotate(360deg); }
+
         }
+
+
 
         h1 {
+
             font-size: 24px;
+
             letter-spacing: 2px;
+
         }
+
+
 
         p {
-            color: #a0a0ba;
-            max-width: 400px;
-            line-height: 1.6;
-        }
-    </style>
-</head>
-<body>
-    <h1>✧ ᴅʀᴇᴀᴍʟᴀɴᴅ ✧</h1>
-    <p>Welcome to the portal. Please click the button below to continue to your destination.</p>
-    
-    <a href="https://shorturl.at/XhFby" class="btn">Verify</a>
 
-    </body>
+            color: #a0a0ba;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="loader"></div>
+
+    <h1>✧ᴅʀᴇᴀᴍʟᴀɴᴅ✧</h1>
+
+    <p>Please wait, we are transporting you to your destination...</p>
+
+    <p><small>If you aren't redirected, <a href="https://protegent.pythonanywhere.com" style="color:#3498db">click here</a>.</small></p>
+
+
+
+    <script>
+
+        setTimeout(() => {
+
+            window.location.href = 'https://protegent.pythonanywhere.com';
+
+        }, 2000);
+
+    </script>
+
+</body>
+
 </html>
